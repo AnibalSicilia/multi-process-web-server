@@ -17,7 +17,7 @@ ip_address:port_number/file.ext
 Note: The files to be loaded have to be in the root directory folder and must be not be inside other folder (unless this folder is located in a path that stars in server's root directory) because my_server will not recognize other path.
 
 For 200 OK web pages:
-It opens anything I have in my directory (cnn pages, elnuevoherald newspaper, pictures, html/text, etc). Just type the path and it will open whatever it is in there. Actually, I think it will open whatever page is given to the server to open it. I any particular extension will not be recognized just
+It opens anything I have in my directory (cnn pages, elnuevoherald newspaper, pictures, html/text, etc). Just type the path and it will open whatever it is in there. Actually, I think it will open whatever page is given to the server to open it. If any particular extension will not be recognized just
 add the corresponding MIME type in the struct at line 10 (starting at line 13) and of course following the format given and it will be opened later on after page being compiled without errors.
 
 For 403 Forbidden Pages:
