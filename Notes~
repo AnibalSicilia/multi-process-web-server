@@ -1,0 +1,33 @@
+Running server
+"ALWAYS RUN SERVER FIRST!!!!"
+
+-compile using 'make' command
+
+Usage to run server:
+
+./my_server <port_number>
+
+-on any web browser of your preference just type 
+
+ip_address:port_number/file.ext
+
+Note: The files to be loaded have to be in the root directory folder and must be not be inside other folder (unless this folder is located in a path that stars in server's root directory) because my_server will not recognize other path.
+
+For 200 OK web pages:
+It opens anything I have in my directory (cnn pages, elnuevoherald newspaper, pictures, html/text, etc). Just type the path and it will open whatever it is in there. Actually, I think it will open whatever page is given to the server to open it. I any particular extension will not be recognized just
+add the corresponding MIME type in the struct at line 10 (starting at line 13) and of course following the format given and it will be opened later on after page being compiled without errors.
+
+For 403 Forbidden Pages:
+
+I placed a file with forbidden access inside dir1. It is called 'flower.jpg'. I used access() method in order to check for permissions of any file.
+In this case, it checks for read/write permissions on any folder. It works with every attempt I made on my computer. If there is any problem when oppening the file on any other machine. Please!! on line 122 there is an alternative check just comment out the line in 123 and remove the coments on line 123. Then it should work for all the files.
+
+For 404 Page Not found:
+
+Just type any file not present in the directory and you will get this message.
+Note: In case you dont type any file i.e 'ip_address:localport' my default web page will be loaded instead.
+
+To close server just press Ctrl-C combination. 
+
+Anibal
+
